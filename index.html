@@ -2,688 +2,696 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FluteCraft — Fine Handcrafted Flutes</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anil Saikumar | Portfolio</title>
+  <link rel="stylesheet" href="/ANIL SK PORTFOLIO/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║          NAVIGATION             ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner container">
-      <a class="nav-logo" href="#" onclick="showPage('home')">
-        <span class="nav-logo-name">FluteCraft</span>
-        <span class="nav-logo-tagline">Fine Instruments Since 1978</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#" class="active" data-page="home" onclick="showPage('home')">Home</a></li>
-        <li><a href="#" data-page="menu"    onclick="showPage('menu')">Our Flutes</a></li>
-        <li><a href="#" data-page="about"   onclick="showPage('about')">About Us</a></li>
-        <li><a href="#" data-page="gallery" onclick="showPage('gallery')">Gallery</a></li>
-        <li><a href="#" data-page="contact" onclick="showPage('contact')">Contact</a></li>
-        <li class="nav-cta"><a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire Now</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">AS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+<button class="theme-toggle" onclick="toggleTheme()">
+  🌙
+</button>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <!-- Mobile Nav -->
-  <div class="mobile-nav" id="mobileNav">
-    <a href="#" onclick="showPage('home');closeMobileNav()">Home</a>
-    <a href="#" onclick="showPage('menu');closeMobileNav()">Our Flutes</a>
-    <a href="#" onclick="showPage('about');closeMobileNav()">About Us</a>
-    <a href="#" onclick="showPage('gallery');closeMobileNav()">Gallery</a>
-    <a href="#" onclick="showPage('contact');closeMobileNav()">Contact</a>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shape shape1"></div>
+    <div class="hero-bg-shape shape2"></div>
+    <div class="hero-content fade-in">
+      <div class="hero-badge">Operations Assistant</div>
+      <h1 class="hero-name">Anil Saikumar</h1>
+      <p class="hero-tagline">Organized. Adaptable. Results-driven.</p>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot"></i> Tirunelveli, Tamil Nadu, India</span>
+        <span><i class="fa-solid fa-envelope"></i> anilsaikumarsai@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> +91 8667582695</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="#experience" class="btn-outline">View Work</a>
+      </div>
+    </div>
+      <!-- RIGHT AVATAR -->
+  <div class="hero-avatar">
+
+    <!-- IMAGE -->
+    <div class="avatar-circle">
+      <img src="sai.png" alt="Sai Kumar" class="avatar-image" />
+    </div>
+
+    <!-- RINGS -->
+    <div class="avatar-ring"></div>
+    <div class="avatar-ring ring2"></div>
+
   </div>
-  <div class="overlay" id="overlay" onclick="closeMobileNav()"></div>
+  </section>
 
-
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║          HOME PAGE              ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <main id="page-home" class="page active">
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <span class="hero-eyebrow">Handcrafted in India</span>
-        <h1 class="hero-title">Where <em>Wood</em><br>Meets<br><em>Music</em></h1>
-        <p class="hero-desc">
-          Premium flutes handcrafted for musicians, orchestras &amp; music shops worldwide.
-          Each instrument carries the soul of the artisan who made it.
-        </p>
-        <div class="hero-actions">
-          <a href="#" class="btn btn-hero-primary" onclick="showPage('menu')">Explore Flutes</a>
-          <a href="#" class="btn btn-hero-outline" onclick="showPage('about')">Our Story</a>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <p class="about-text">
+            I'm a final-year BCA student with hands-on experience in operations management, team coordination, and data handling. Currently working as an Operations Assistant at Selfie Petti, I thrive in fast-paced environments where organization and communication make a real difference.
+          </p>
+          <p class="about-text">
+            I bring together strong technical skills in Microsoft Excel and PowerPoint with proven event management experience — making me a versatile professional ready for real-world challenges.
+          </p>
         </div>
-      </div>
-      <div class="hero-scroll"><span>Scroll</span></div>
-    </section>
-
-    <!-- Stats -->
-    <div class="stats-strip">
-      <div class="stats-grid">
-        <div class="fade-in">
-          <span class="stat-num">45+</span>
-          <span class="stat-label">Years of Craftsmanship</span>
-        </div>
-        <div class="fade-in">
-          <span class="stat-num">12K+</span>
-          <span class="stat-label">Flutes Delivered</span>
-        </div>
-        <div class="fade-in">
-          <span class="stat-num">38</span>
-          <span class="stat-label">Countries Served</span>
-        </div>
-        <div class="fade-in">
-          <span class="stat-num">200+</span>
-          <span class="stat-label">Orchestra Clients</span>
+        <div class="about-highlights reveal">
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-table"></i></div>
+            <div>
+              <h4>Excel Proficiency</h4>
+              <p>Advanced data tracking, reporting, and analysis using Microsoft Excel.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div>
+              <h4>Event Management</h4>
+              <p>Coordinated large-scale events including logistics, vendor communication, and crowd management.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-comments"></i></div>
+            <div>
+              <h4>Communication</h4>
+              <p>Clear and effective communication between teams, vendors, and stakeholders.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Featured Products -->
-    <section class="featured">
-      <div class="section-header fade-in">
-        <div>
-          <span class="section-label">Our Collection</span>
-          <h2 class="section-title">Signature<br>Instruments</h2>
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-wrapper">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fa-solid fa-laptop-code"></i> Tech Skills</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fa-solid fa-file-excel"></i>
+              <span>Advanced Microsoft Excel</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <span>Microsoft PowerPoint</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>Data Organization & Reporting</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>AI Web developer</span>
+            </div>
+          </div>
         </div>
-        <a href="#" class="btn btn-outline" onclick="showPage('menu')">View All Flutes</a>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fa-solid fa-people-group"></i> Event & Management</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fa-solid fa-users-gear"></i>
+              <span>Team Coordination</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>Event Coordination</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>On-site Operations</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-person-walking-arrow-right"></i>
+              <span>Crowd Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fa-solid fa-message"></i>
+              <span>Communication</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-clock"></i>
+              <span>Time Management</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Adaptability</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="products-grid">
+    </div>
+  </section>
 
-        <div class="product-card fade-in">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Bansuri Maestro" />
-            <span class="product-badge">Bestseller</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Concert Series</span>
-            <h3 class="product-name">Bansuri Maestro</h3>
-            <p class="product-desc">Handcut from aged bamboo, tuned to A440 concert pitch. Preferred by professional musicians.</p>
-            <div class="product-footer">
-              <span class="product-price">₹4,800 <span>onwards</span></span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline reveal">
+        <div class="timeline-marker"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Operations Assistant</h3>
+              <p class="exp-company"><i class="fa-solid fa-building"></i> Selfie Petti — Entertainment Management</p>
             </div>
+            <div class="exp-badge">Aug 2025 – Present</div>
           </div>
+          <ul class="exp-list">
+            <li><i class="fa-solid fa-check-circle"></i> Staff coordination and day-to-day operations support</li>
+            <li><i class="fa-solid fa-check-circle"></i> Team supervision and task assignment across departments</li>
+            <li><i class="fa-solid fa-check-circle"></i> Logistics planning and event setup coordination</li>
+            <li><i class="fa-solid fa-check-circle"></i> Communication bridge between internal teams and external vendors</li>
+            <li><i class="fa-solid fa-check-circle"></i> Excel-based data management, tracking, and reporting</li>
+            <li><i class="fa-solid fa-check-circle"></i> PowerPoint presentations for operational reports and reviews</li>
+          </ul>
         </div>
-
-        <div class="product-card fade-in">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1534294228306-bd54eb9a7ba8?w=600&q=80" alt="Rosewood Elegance" />
-            <span class="product-badge">New</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Artisan Series</span>
-            <h3 class="product-name">Rosewood Elegance</h3>
-            <p class="product-desc">Crafted from select Indian rosewood with silver-plated keys. A jewel for any orchestra pit.</p>
-            <div class="product-footer">
-              <span class="product-price">₹18,500 <span>onwards</span></span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card fade-in">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80" alt="Student Starter" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Learner Series</span>
-            <h3 class="product-name">Sunrise Starter</h3>
-            <p class="product-desc">Perfect first flute. Easy blow, clear tone, durable bamboo. Trusted by music schools across India.</p>
-            <div class="product-footer">
-              <span class="product-price">₹1,200 <span>onwards</span></span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Story Banner -->
-    <section class="story-banner">
-      <div class="story-inner container">
-        <div class="story-images fade-in">
-          <div class="story-img-main">
-            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80" alt="Workshop" style="height:100%;" />
-          </div>
-          <div class="story-img-accent">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80" alt="Crafting" style="height:100%;" />
-          </div>
-          <div class="story-img-badge"><span>Est.</span><strong>1978</strong><small>Madurai</small></div>
-        </div>
-        <div class="story-text fade-in">
-          <span class="section-label">Our Heritage</span>
-          <h2>Crafted by hand,<br>played from the heart</h2>
-          <p>For over four decades, FluteCraft has been synonymous with quality flutes made deep in the heart of Madurai. Our master artisans use traditional techniques passed through three generations, selecting only the finest bamboo and hardwoods.</p>
-          <p>Every flute that leaves our workshop is individually tested, tuned, and played before it ever reaches a musician's hands.</p>
-          <div class="story-features">
-            <div class="story-feature">
-              <div class="feature-icon">🎍</div>
-              <div class="feature-text">
-                <h4>Premium Materials</h4>
-                <p>Only aged bamboo &amp; select hardwoods</p>
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- EDUCATION + CERTS -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="two-col-grid">
+
+        <!-- Education -->
+        <div class="reveal">
+          <div class="section-label">Academic</div>
+          <h2 class="section-title">Education</h2>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-details">
+              <h3>Bachelor of Computer Applications</h3>
+              <p class="edu-college"><i class="fa-solid fa-university"></i> MDT Hindu College, Tirunelveli</p>
+              <div class="edu-tags">
+                <span class="tag">Final Year Student</span>
+                <span class="tag tag-accent">Expected May 2026</span>
               </div>
             </div>
-            <div class="story-feature">
-              <div class="feature-icon">🎵</div>
-              <div class="feature-text">
-                <h4>Concert Tuning</h4>
-                <p>A440 pitch-accurate instruments</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="reveal">
+          <div class="section-label">Achievements</div>
+          <h2 class="section-title">Certifications</h2>
+          <div class="cert-list">
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div>
+                <h4>PCT Internship</h4>
+                <p>Professional Certificate Training — Hands-on industry internship experience</p>
               </div>
             </div>
-            <div class="story-feature">
-              <div class="feature-icon">🛡️</div>
-              <div class="feature-text">
-                <h4>Lifetime Support</h4>
-                <p>Free tuning &amp; repair consultations</p>
-              </div>
-            </div>
-            <div class="story-feature">
-              <div class="feature-icon">📦</div>
-              <div class="feature-text">
-                <h4>Bulk Orders</h4>
-                <p>Special pricing for music shops</p>
+            <div class="cert-card cert-gold">
+              <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div>
+                <h4>2nd Prize — IGNITEX 2024</h4>
+                <p>Paper presentation on <strong>Quantum Computing</strong> at the IGNITEX national symposium</p>
               </div>
             </div>
           </div>
-          <a href="#" class="btn btn-primary" onclick="showPage('about')">Read Our Story</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="reviews">
-      <div class="section-header fade-in">
-        <div>
-          <span class="section-label">What They Say</span>
-          <h2 class="section-title">Voices of<br>Our Musicians</h2>
-        </div>
-      </div>
-      <div class="reviews-grid">
-
-        <div class="review-card fade-in">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">"The Bansuri Maestro I ordered for our ensemble surpassed every expectation. The tone is warm, rich and incredibly consistent across all octaves."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">A</div>
-            <div>
-              <div class="reviewer-name">Arjun Sharma</div>
-              <div class="reviewer-role">Principal Flutist, Chennai Symphony</div>
-            </div>
-          </div>
         </div>
 
-        <div class="review-card fade-in">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">"We stock FluteCraft exclusively in our store. Our customers keep coming back for them. The quality for the price point is simply unbeatable."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">P</div>
-            <div>
-              <div class="reviewer-name">Priya Menon</div>
-              <div class="reviewer-role">Owner, Swara Music House, Bangalore</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card fade-in">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">"Ordered 40 Sunrise Starters for our school programme. Every single one was perfectly tuned and arrived beautifully packaged. FluteCraft is a true partner."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">R</div>
-            <div>
-              <div class="reviewer-name">Radhika Iyer</div>
-              <div class="reviewer-role">Music Director, Harmony Academy, Coimbatore</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main><!-- /page-home -->
-
-
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║        MENU / PRODUCTS          ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <main id="page-menu" class="page">
-
-    <div class="page-hero">
-      <span class="page-hero-eyebrow">Our Collection</span>
-      <h1 class="page-hero-title">Fine Flutes for<br>Every Musician</h1>
-      <p class="page-hero-sub">From learner bamboo flutes to professional concert-grade instruments — find your perfect voice.</p>
-    </div>
-
-    <div class="filter-bar">
-      <div class="filter-inner">
-        <span class="filter-label">Filter:</span>
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="concert">Concert Series</button>
-        <button class="filter-btn" data-filter="artisan">Artisan Series</button>
-        <button class="filter-btn" data-filter="learner">Learner Series</button>
-        <button class="filter-btn" data-filter="folk">Folk Series</button>
       </div>
     </div>
+  </section>
 
-    <section class="products-section">
-      <div class="products-full-grid" id="productsGrid">
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
 
-        <div class="product-card fade-in" data-cat="concert">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Bansuri Maestro" />
-            <span class="product-badge">Bestseller</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Concert Series</span>
-            <h3 class="product-name">Bansuri Maestro</h3>
-            <p class="product-desc">Handcut from aged bamboo, tuned to A440. Preferred by concert-level musicians worldwide.</p>
-            <div class="product-footer">
-              <span class="product-price">₹4,800+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
+  <!-- INTERESTS -->
+  <section class="section" id="interests">
+    <div class="container">
+      <div class="section-label">Beyond Work</div>
+      <h2 class="section-title">Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h4>Technology & AI Tools</h4>
+          <p>Passionate about exploring emerging technologies, AI tools, and their real-world applications.</p>
         </div>
-
-        <div class="product-card fade-in" data-cat="concert">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=600&q=80" alt="Platinum Concert" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Concert Series</span>
-            <h3 class="product-name">Platinum Concert G</h3>
-            <p class="product-desc">Our finest concert flute in G scale, with sterling silver lip plate. Orchestra-ready.</p>
-            <div class="product-footer">
-              <span class="product-price">₹9,200+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fa-solid fa-book-open"></i></div>
+          <h4>Social & Political Reading</h4>
+          <p>Avid reader of social science, current affairs, and political thought.</p>
         </div>
-
-        <div class="product-card fade-in" data-cat="artisan">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1534294228306-bd54eb9a7ba8?w=600&q=80" alt="Rosewood Elegance" />
-            <span class="product-badge">New</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Artisan Series</span>
-            <h3 class="product-name">Rosewood Elegance</h3>
-            <p class="product-desc">Indian rosewood body with silver-plated keys. Rich, warm tone ideal for classical music.</p>
-            <div class="product-footer">
-              <span class="product-price">₹18,500+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Data Analysis</h4>
+          <p>Enjoys finding patterns and insights through structured data exploration and reporting.</p>
         </div>
-
-        <div class="product-card fade-in" data-cat="artisan">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=600&q=80" alt="Teak Heritage" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Artisan Series</span>
-            <h3 class="product-name">Teak Heritage</h3>
-            <p class="product-desc">Crafted from aged teak with hand-engraved motifs. A collector's instrument and performer's dream.</p>
-            <div class="product-footer">
-              <span class="product-price">₹24,000+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card fade-in" data-cat="learner">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80" alt="Sunrise Starter" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Learner Series</span>
-            <h3 class="product-name">Sunrise Starter</h3>
-            <p class="product-desc">Easy blow, clear tone, durable bamboo. Trusted by music schools and academies across India.</p>
-            <div class="product-footer">
-              <span class="product-price">₹1,200+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card fade-in" data-cat="learner">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80" alt="Academy Pack" />
-            <span class="product-badge">Bulk Deal</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Learner Series</span>
-            <h3 class="product-name">Academy Bulk Pack</h3>
-            <p class="product-desc">Sets of 10, 20, or 50 starter flutes for schools, workshops and music institutions.</p>
-            <div class="product-footer">
-              <span class="product-price">₹980+ <span>/pc</span></span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card fade-in" data-cat="folk">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80" alt="Carnatic Venu" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Folk Series</span>
-            <h3 class="product-name">Carnatic Venu</h3>
-            <p class="product-desc">Traditional south Indian flute in C, D &amp; E scales. Ideal for Carnatic classical music and folk performances.</p>
-            <div class="product-footer">
-              <span class="product-price">₹2,600+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card fade-in" data-cat="folk">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1458560871784-56d23406c091?w=600&q=80" alt="Shepherd Series" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Folk Series</span>
-            <h3 class="product-name">Shepherd Series</h3>
-            <p class="product-desc">Rustic natural bamboo flutes with raw, soulful tones — beloved by folk artists and fusion performers.</p>
-            <div class="product-footer">
-              <span class="product-price">₹1,800+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card fade-in" data-cat="concert">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=600&q=80" alt="Studio Pro" />
-          </div>
-          <div class="product-info">
-            <span class="product-category">Concert Series</span>
-            <h3 class="product-name">Studio Pro Recording</h3>
-            <p class="product-desc">Designed for recording sessions — outstanding mic response and zero intonation drift under studio conditions.</p>
-            <div class="product-footer">
-              <span class="product-price">₹12,000+</span>
-              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Enquire</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main><!-- /page-menu -->
-
-
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║         ABOUT PAGE             ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <main id="page-about" class="page">
-
-    <div class="page-hero">
-      <span class="page-hero-eyebrow">Who We Are</span>
-      <h1 class="page-hero-title">Passion Carved<br>into Every Flute</h1>
-      <p class="page-hero-sub">A family legacy of musical craftsmanship, spanning three generations from the city of Madurai.</p>
-    </div>
-
-    <section class="about-story">
-      <div class="about-img-wrap fade-in">
-        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80" alt="Our Workshop" style="height:100%;" />
-      </div>
-      <div class="about-text fade-in">
-        <span class="section-label">Our Story</span>
-        <h2>From a small workshop to the world's stages</h2>
-        <p>FluteCraft was born in 1978 when master craftsman Venkataraman Pillai, inspired by the classical music tradition of Madurai, began carving bamboo flutes in a small workshop near the Meenakshi temple.</p>
-        <p>What started as a humble endeavour driven by devotion to music has grown into one of India's most respected flute manufacturers. Today, his grandchildren continue the tradition — blending ancestral technique with modern acoustic science.</p>
-        <p>Our flutes are played on concert stages across 38 countries, in orchestras from Chennai to Vienna, in music schools from Mumbai to Tokyo. Yet every instrument is still made one at a time, by hand, with the same care and reverence as that first flute in 1978.</p>
-        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get in Touch</a>
-      </div>
-    </section>
-
-    <section class="team-section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <div>
-            <span class="section-label">The People</span>
-            <h2 class="section-title">Meet Our<br>Master Craftsmen</h2>
-          </div>
-        </div>
-        <div class="team-grid">
-          <div class="team-card fade-in">
-            <div class="team-photo">V</div>
-            <div class="team-name">Venkat Pillai III</div>
-            <div class="team-role">Master Craftsman &amp; CEO</div>
-          </div>
-          <div class="team-card fade-in">
-            <div class="team-photo">L</div>
-            <div class="team-name">Lakshmi Raghavan</div>
-            <div class="team-role">Acoustic Tuning Director</div>
-          </div>
-          <div class="team-card fade-in">
-            <div class="team-photo">M</div>
-            <div class="team-name">Murugan Arjunan</div>
-            <div class="team-role">Senior Bamboo Artisan</div>
-          </div>
-          <div class="team-card fade-in">
-            <div class="team-photo">S</div>
-            <div class="team-name">Sudha Krishnan</div>
-            <div class="team-role">Quality &amp; Export Head</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="values-section">
-      <div class="section-header fade-in">
-        <div>
-          <span class="section-label">What Drives Us</span>
-          <h2 class="section-title">Our Values</h2>
-        </div>
-      </div>
-      <div class="values-grid">
-        <div class="value-card fade-in">
-          <div class="value-icon">🎍</div>
-          <h3 class="value-title">Sustainable Sourcing</h3>
-          <p class="value-desc">We source bamboo only from certified sustainable groves in Kerala and Assam, ensuring minimal ecological impact without compromising quality.</p>
-        </div>
-        <div class="value-card fade-in">
-          <div class="value-icon">🎵</div>
-          <h3 class="value-title">Acoustic Excellence</h3>
-          <p class="value-desc">Every flute is individually tested and tuned by a trained musician before dispatch. Our zero-defect policy means you only ever receive a perfect instrument.</p>
-        </div>
-        <div class="value-card fade-in">
-          <div class="value-icon">🤝</div>
-          <h3 class="value-title">Musician-First</h3>
-          <p class="value-desc">We work with musicians, music teachers, and orchestras to refine our instruments. Our design is guided by those who actually play — not just engineers.</p>
-        </div>
-      </div>
-    </section>
-
-  </main><!-- /page-about -->
-
-
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║         GALLERY PAGE           ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <main id="page-gallery" class="page">
-
-    <div class="page-hero">
-      <span class="page-hero-eyebrow">Our Instruments</span>
-      <h1 class="page-hero-title">Beauty in<br>Every Detail</h1>
-      <p class="page-hero-sub">A visual journey through our workshops, instruments, and the music they create.</p>
-    </div>
-
-    <div class="gallery-grid" id="galleryGrid">
-      <!-- Items injected by JS -->
-    </div>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-      <button class="lightbox-nav lightbox-prev" onclick="lightboxNav(-1)">&#8249;</button>
-      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
-      <button class="lightbox-nav lightbox-next" onclick="lightboxNav(1)">&#8250;</button>
-    </div>
-
-  </main><!-- /page-gallery -->
-
-
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║         CONTACT PAGE           ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <main id="page-contact" class="page">
-
-    <div class="page-hero">
-      <span class="page-hero-eyebrow">Reach Out</span>
-      <h1 class="page-hero-title">Let's Create<br>Music Together</h1>
-      <p class="page-hero-sub">For bulk orders, partnerships, custom instruments or any queries — we'd love to hear from you.</p>
-    </div>
-
-    <section class="contact-section">
-
-      <div class="contact-info fade-in">
-        <span class="section-label">Our Details</span>
-        <h2>We're always happy to talk flutes</h2>
-        <p>Whether you're a music shop looking to stock our instruments, an orchestra seeking custom orders, or a musician wanting the perfect flute — reach out and we'll respond within 24 hours.</p>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div>
-              <span class="contact-item-label">Address</span>
-              <span class="contact-item-value">14 Narayanasamy Street, Near Meenakshi Temple,<br>Madurai – 625 001, Tamil Nadu, India</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <div>
-              <span class="contact-item-label">Phone</span>
-              <span class="contact-item-value">+91 98420 55678</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div>
-              <span class="contact-item-label">Email</span>
-              <span class="contact-item-value">hello@flutecraft.in</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">🕐</div>
-            <div>
-              <span class="contact-item-label">Working Hours</span>
-              <span class="contact-item-value">Mon–Sat: 9:00 AM – 6:00 PM IST</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form fade-in" id="contactFormWrap">
-        <span class="section-label" style="margin-bottom:1.5rem;display:block;">Send a Message</span>
-        <div class="form-row">
-          <div class="form-group">
-            <label>First Name</label>
-            <input type="text" id="fname" placeholder="Arjun" />
-          </div>
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" id="lname" placeholder="Sharma" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" id="email" placeholder="arjun@example.com" />
-        </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" id="phone" placeholder="+91 98XXX XXXXX" />
-        </div>
-        <div class="form-group">
-          <label>I am a…</label>
-          <select id="clientType">
-            <option value="">Select your profile</option>
-            <option>Musician / Artist</option>
-            <option>Music Shop / Retailer</option>
-            <option>Orchestra / Ensemble</option>
-            <option>Music School / Academy</option>
-            <option>Event Organiser</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea id="message" placeholder="Tell us about your requirements…"></textarea>
-        </div>
-        <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="submitForm()">Send Message</button>
-
-        <div class="form-success" id="formSuccess">
-          <div class="form-success-icon">🎵</div>
-          <h3>Thank you for reaching out!</h3>
-          <p>We'll get back to you within 24 hours. In the meantime, feel free to browse our flute collection.</p>
-          <br>
-          <a href="#" class="btn btn-outline" onclick="showPage('menu')">Explore Flutes</a>
-        </div>
-      </div>
-
-    </section>
-
-  </main><!-- /page-contact -->
-
-
-  <!-- ╔══════════════════════════════════╗ -->
-  <!-- ║            FOOTER               ║ -->
-  <!-- ╚══════════════════════════════════╝ -->
-  <footer>
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand-name">FluteCraft</div>
-        <p class="footer-brand-desc">Handcrafted flutes from the heart of Madurai. Premium instruments for musicians, orchestras and music shops worldwide since 1978.</p>
-        <div class="social-links">
-          <div class="social-link" title="Instagram">in</div>
-          <div class="social-link" title="Facebook">f</div>
-          <div class="social-link" title="YouTube">▶</div>
-          <div class="social-link" title="WhatsApp">💬</div>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Our Flutes</h4>
-        <a onclick="showPage('menu')">Concert Series</a>
-        <a onclick="showPage('menu')">Artisan Series</a>
-        <a onclick="showPage('menu')">Learner Series</a>
-        <a onclick="showPage('menu')">Folk Series</a>
-        <a onclick="showPage('menu')">Bulk Orders</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a onclick="showPage('home')">Home</a>
-        <a onclick="showPage('about')">About Us</a>
-        <a onclick="showPage('gallery')">Gallery</a>
-        <a onclick="showPage('contact')">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <a>+91 98420 55678</a>
-        <a>hello@flutecraft.in</a>
-        <a>Madurai, Tamil Nadu</a>
-        <a>Mon–Sat, 9AM–6PM</a>
       </div>
     </div>
-    <div class="footer-bottom container">
-      <span>© 2025 FluteCraft. All rights reserved.</span>
-      <div style="display:flex;gap:1.5rem;">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">AS</div>
+          <h3>Anil Saikumar</h3>
+          <p>Operations Assistant · BCA Final Year</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Tirunelveli, Tamil Nadu, India</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:anilsaikumarsai@gmail.com">anilsaikumarsai@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone"></i> +91 8667582695</p>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/anil-sai-kumar-sai-828841283/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJq3uL3wCRfe6MfuxcIp9Cw%3D%3D" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/anilsaikumar" class="social-btn" aria-label="GitHub">  <i class="fa-brands fa-github"></i></a>
+            <a href="mailto:anilsaikumarsai@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Anil Saikumar · Designed with care</p>
     </div>
   </footer>
+<script src="/ANIL SK PORTFOLIO/script.js"></script>
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
 
-  <script src="script.js"></script>
+  // Save preference
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Load saved theme
+window.onload = function () {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+};
+</script>
+  
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anil Saikumar | Portfolio</title>
+  <link rel="stylesheet" href="/ANIL SK PORTFOLIO/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">AS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+<button class="theme-toggle" onclick="toggleTheme()">
+  🌙
+</button>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shape shape1"></div>
+    <div class="hero-bg-shape shape2"></div>
+    <div class="hero-content fade-in">
+      <div class="hero-badge">Operations Assistant</div>
+      <h1 class="hero-name">Anil Saikumar</h1>
+      <p class="hero-tagline">Organized. Adaptable. Results-driven.</p>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot"></i> Tirunelveli, Tamil Nadu, India</span>
+        <span><i class="fa-solid fa-envelope"></i> anilsaikumarsai@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> +91 8667582695</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="#experience" class="btn-outline">View Work</a>
+      </div>
+    </div>
+      <!-- RIGHT AVATAR -->
+  <div class="hero-avatar">
+
+    <!-- IMAGE -->
+    <div class="avatar-circle">
+      <img src="sai.png" alt="Sai Kumar" class="avatar-image" />
+    </div>
+
+    <!-- RINGS -->
+    <div class="avatar-ring"></div>
+    <div class="avatar-ring ring2"></div>
+
+  </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <p class="about-text">
+            I'm a final-year BCA student with hands-on experience in operations management, team coordination, and data handling. Currently working as an Operations Assistant at Selfie Petti, I thrive in fast-paced environments where organization and communication make a real difference.
+          </p>
+          <p class="about-text">
+            I bring together strong technical skills in Microsoft Excel and PowerPoint with proven event management experience — making me a versatile professional ready for real-world challenges.
+          </p>
+        </div>
+        <div class="about-highlights reveal">
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-table"></i></div>
+            <div>
+              <h4>Excel Proficiency</h4>
+              <p>Advanced data tracking, reporting, and analysis using Microsoft Excel.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div>
+              <h4>Event Management</h4>
+              <p>Coordinated large-scale events including logistics, vendor communication, and crowd management.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fa-solid fa-comments"></i></div>
+            <div>
+              <h4>Communication</h4>
+              <p>Clear and effective communication between teams, vendors, and stakeholders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-wrapper">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fa-solid fa-laptop-code"></i> Tech Skills</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fa-solid fa-file-excel"></i>
+              <span>Advanced Microsoft Excel</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <span>Microsoft PowerPoint</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>Data Organization & Reporting</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>AI Web developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fa-solid fa-people-group"></i> Event & Management</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fa-solid fa-users-gear"></i>
+              <span>Team Coordination</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>Event Coordination</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>On-site Operations</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-person-walking-arrow-right"></i>
+              <span>Crowd Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fa-solid fa-brain"></i> Soft Skills</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fa-solid fa-message"></i>
+              <span>Communication</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-clock"></i>
+              <span>Time Management</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Adaptability</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline reveal">
+        <div class="timeline-marker"></div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Operations Assistant</h3>
+              <p class="exp-company"><i class="fa-solid fa-building"></i> Selfie Petti — Entertainment Management</p>
+            </div>
+            <div class="exp-badge">Aug 2025 – Present</div>
+          </div>
+          <ul class="exp-list">
+            <li><i class="fa-solid fa-check-circle"></i> Staff coordination and day-to-day operations support</li>
+            <li><i class="fa-solid fa-check-circle"></i> Team supervision and task assignment across departments</li>
+            <li><i class="fa-solid fa-check-circle"></i> Logistics planning and event setup coordination</li>
+            <li><i class="fa-solid fa-check-circle"></i> Communication bridge between internal teams and external vendors</li>
+            <li><i class="fa-solid fa-check-circle"></i> Excel-based data management, tracking, and reporting</li>
+            <li><i class="fa-solid fa-check-circle"></i> PowerPoint presentations for operational reports and reviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- EDUCATION + CERTS -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="two-col-grid">
+
+        <!-- Education -->
+        <div class="reveal">
+          <div class="section-label">Academic</div>
+          <h2 class="section-title">Education</h2>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-details">
+              <h3>Bachelor of Computer Applications</h3>
+              <p class="edu-college"><i class="fa-solid fa-university"></i> MDT Hindu College, Tirunelveli</p>
+              <div class="edu-tags">
+                <span class="tag">Final Year Student</span>
+                <span class="tag tag-accent">Expected May 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="reveal">
+          <div class="section-label">Achievements</div>
+          <h2 class="section-title">Certifications</h2>
+          <div class="cert-list">
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div>
+                <h4>PCT Internship</h4>
+                <p>Professional Certificate Training — Hands-on industry internship experience</p>
+              </div>
+            </div>
+            <div class="cert-card cert-gold">
+              <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div>
+                <h4>2nd Prize — IGNITEX 2024</h4>
+                <p>Paper presentation on <strong>Quantum Computing</strong> at the IGNITEX national symposium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- INTERESTS -->
+  <section class="section" id="interests">
+    <div class="container">
+      <div class="section-label">Beyond Work</div>
+      <h2 class="section-title">Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h4>Technology & AI Tools</h4>
+          <p>Passionate about exploring emerging technologies, AI tools, and their real-world applications.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fa-solid fa-book-open"></i></div>
+          <h4>Social & Political Reading</h4>
+          <p>Avid reader of social science, current affairs, and political thought.</p>
+        </div>
+        <div class="interest-card reveal">
+          <div class="interest-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Data Analysis</h4>
+          <p>Enjoys finding patterns and insights through structured data exploration and reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">AS</div>
+          <h3>Anil Saikumar</h3>
+          <p>Operations Assistant · BCA Final Year</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Tirunelveli, Tamil Nadu, India</p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:anilsaikumarsai@gmail.com">anilsaikumarsai@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone"></i> +91 8667582695</p>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/anil-sai-kumar-sai-828841283/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BJq3uL3wCRfe6MfuxcIp9Cw%3D%3D" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/anilsaikumar" class="social-btn" aria-label="GitHub">  <i class="fa-brands fa-github"></i></a>
+            <a href="mailto:anilsaikumarsai@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Anil Saikumar · Designed with care</p>
+    </div>
+  </footer>
+<script src="/ANIL SK PORTFOLIO/script.js"></script>
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+
+  // Save preference
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Load saved theme
+window.onload = function () {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+};
+</script>
+  
 </body>
 </html>
